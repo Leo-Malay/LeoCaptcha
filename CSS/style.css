@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+a {
+    color: inherit;
+}
+.section p.maintitle {
+    margin: 30px 0px;
+    font-size: 30px !important;
+    font-weight: 600;
+    text-decoration: underline;
+}
+/** Home */
+.section.Home {
+    padding: 15vh 0px;
+    background-color: dodgerblue;
+    color: #fff;
+}
+.section.Home .title {
+    font-size: 60px;
+    font-weight: 600;
+}
+.section.Home .subtitle {
+    padding: 10px 0px;
+    font-size: 30px;
+}
+.section.Home .desc {
+    padding: 10px 0px;
+    font-size: 16px;
+}
+/** Guide */
+.section.guide {
+    margin: 10px;
+}
+.section.guide p {
+    text-align: left !important;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+/** Tryout Section */
+.section.tryout {
+    margin: 20px 0px;
+}
+.section .exampleContainer .captchaBox {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.075);
+}
+.section .exampleContainer .captchaBox p.title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.section .exampleContainer .captchaBox canvas {
+    border: 1px solid #ccc;
+}
+.section .exampleContainer .captchaBox input[type="text"] {
+    font-size: 15px;
+    width: 190px;
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid #ccc;
+}
+.section .exampleContainer .captchaBox input[type="button"] {
+    padding: 5px 20px;
+    margin: 3px;
+    font-weight: 600;
+    color: #fff;
+}
+.section .exampleContainer .captchaBox input[type="button"]#primary {
+    background-color: dodgerblue;
+}
+.section .exampleContainer .captchaBox input[type="button"]#success {
+    background-color: mediumseagreen;
+}
+/** Description */
+.section.description {
+    overflow-x: scroll;
+}
+.section.description table {
+    margin: auto;
+    width: 80%;
+    min-width: 600px;
+    text-align: left;
+}
+.section table tr td#code,
+.section.guide pre {
+    background-color: #000;
+    color: #eee;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 1px 5%;
+}
+.section table tr td {
+    padding: 10px;
+    text-align: justify;
+    width: 400px;
+}

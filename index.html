@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LeoCaptcha</title>
+        <meta
+            name="keywords"
+            content="LEO CAPTCHA EASY NUMERIC ALPHA ALPHANUMERIC COLOR BACKGROUNDCOLOR POWERFUL FRONTEND LEOCAPTCHA MALAY BHAVSAR MALAYBHAVSAR MALAYCAPTCHA BHAVSARCAPTCHA LEOMALAY LEOMALAYCAPTCHA JAVASCRIPT LIBRARY"
+        />
+        <meta
+            name="description"
+            content="A simple yet powerful CAPTCHA javascript Library to add CAPTCHA to your website with minimal efforts."
+        />
+        <meta name="robots" content="index,follow" />
+        <link rel="stylesheet" href="./CSS/style.css" />
+        <script src="./JS/captcha.js"></script>
+    </head>
+
+    <body>
+        <div class="section Home">
+            <p class="title">LeoCaptcha</p>
+            <p class="subtitle">Simple, Easy yet Powerful CAPTCHA</p>
+            <p class="desc">
+                Made by
+                <a href="mailto:malaybhavsar.290@gmail.com">Malay Bhavsar</a>
+            </p>
+        </div>
+        <div class="section guide">
+            <p class="maintitle">How to Implement</p>
+            <p>
+                1.
+                <a
+                    href="./JS/captcha.js"
+                    download="LeoCaptcha"
+                    title="Download CAPTCHA JS"
+                >
+                    Download</a
+                >
+                the file and add it to your project
+            </p>
+            <p>2. Link the file in the head section of your page</p>
+            <pre>&lt;script src="./captcha.js"&gt;&lt;/script&gt;</pre>
+            <p>3. Add the following HTML snippets at the place for CAPTCHA</p>
+            <pre>
+&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;
+&lt;input
+    type="text"
+    name="CaptchaText"
+    id="myInput"
+    placeholder="Enter Captcha"
+/&gt;
+&lt;input
+    type="button"
+    onclick="captcha.displayCaptcha()"
+    value="Reload"
+    id="primary"
+/&gt;
+&lt;input
+    type="button"
+    onclick="captcha.verifyCaptcha(captchaSuccess, captchaFailure)"
+    value="Submit"
+    id="success"
+/&gt;</pre
+            >
+
+            <p>4. Add the following JavaScript Snippets.</p>
+            <pre>
+let captcha = new LeoCaptcha("myCanvas","myInput","AlphaNumeric", 5);
+captcha.displayCaptcha();
+
+function captchaSuccess() {
+    // This function will be executed on Success
+}
+function captchaFailure() {
+    // This function will be executed on Failure
+}</pre
+            >
+            <p>5. Apply CSS according to your Needs</p>
+        </div>
+        <div class="section tryout">
+            <p class="maintitle">Try Out</p>
+            <div class="exampleContainer">
+                <div class="captchaBox AlphaNumeric">
+                    <p class="title">Alphanumeric</p>
+                    <canvas id="myCanvas1"></canvas>
+                    <br />
+                    <input
+                        type="text"
+                        name="CaptchaText"
+                        id="myInput1"
+                        placeholder="Enter Captcha"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        onclick="captcha.displayCaptcha()"
+                        value="Reload"
+                        id="primary"
+                    />
+                    <input
+                        type="button"
+                        onclick="captcha.verifyCaptcha(captchaSuccess, captchaFailure)"
+                        value="Submit"
+                        id="success"
+                    />
+                    <script>
+                        let captcha = new LeoCaptcha(
+                            "myCanvas1",
+                            "myInput1",
+                            "AlphaNumeric"
+                        );
+                        captcha.displayCaptcha();
+                    </script>
+                </div>
+                <div class="captchaBox Alpha">
+                    <p class="title">Alpha</p>
+                    <canvas id="myCanvas2"></canvas>
+                    <br />
+                    <input
+                        type="text"
+                        name="CaptchaText"
+                        id="myInput2"
+                        placeholder="Enter Captcha"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        onclick="captcha2.displayCaptcha()"
+                        value="Reload"
+                        id="primary"
+                    />
+
+                    <input
+                        type="button"
+                        onclick="captcha2.verifyCaptcha(captchaSuccess, captchaFailure)"
+                        value="Submit"
+                        id="success"
+                    />
+                    <script>
+                        let captcha2 = new LeoCaptcha(
+                            "myCanvas2",
+                            "myInput2",
+                            "Alpha"
+                        );
+                        captcha2.displayCaptcha();
+                    </script>
+                </div>
+                <div class="captchaBox Numeric">
+                    <p class="title">Numeric</p>
+                    <canvas id="myCanvas3"></canvas>
+                    <br />
+                    <input
+                        type="text"
+                        name="CaptchaText"
+                        id="myInput3"
+                        placeholder="Enter Captcha"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        onclick="captcha3.displayCaptcha()"
+                        value="Reload"
+                        id="primary"
+                    />
+                    <input
+                        type="button"
+                        onclick="captcha3.verifyCaptcha(captchaSuccess, captchaFailure)"
+                        value="Submit"
+                        id="success"
+                    />
+                    <script>
+                        let captcha3 = new LeoCaptcha(
+                            "myCanvas3",
+                            "myInput3",
+                            "Numeric"
+                        );
+                        captcha3.displayCaptcha();
+                    </script>
+                </div>
+                <div class="captchaBox Math">
+                    <p class="title">Math</p>
+                    <canvas id="myCanvas4"></canvas>
+                    <br />
+                    <input
+                        type="text"
+                        name="CaptchaText"
+                        id="myInput4"
+                        placeholder="Enter Captcha"
+                    />
+                    <br />
+                    <input
+                        type="button"
+                        onclick="captcha4.displayCaptcha()"
+                        value="Reload"
+                        id="primary"
+                    />
+
+                    <input
+                        type="button"
+                        onclick="captcha4.verifyCaptcha(captchaSuccess, captchaFailure)"
+                        value="Submit"
+                        id="success"
+                    />
+                    <script>
+                        let captcha4 = new LeoCaptcha(
+                            "myCanvas4",
+                            "myInput4",
+                            "Math"
+                        );
+                        captcha4.displayCaptcha();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="section description">
+            <p class="maintitle">Description</p>
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td id="code">cap.setDimension(width, height)</td>
+                    <td>Pass the desired height and width of CAPTCHA Canvas</td>
+                    <td id="code">
+                        cap.setDimension() // Default
+                        <br />
+                        cap.setDimension(300, 60)
+                    </td>
+                </tr>
+                <tr>
+                    <td id="code">cap.setColor(enableColor, colorArray)</td>
+                    <td>
+                        If you have a specific color choice ten pass in the form
+                        of array or if you dont want them to be colorful then
+                        pass false which defaults to Black color Text
+                    </td>
+                    <td id="code">
+                        cap.setColor() // Default
+                        <br />cap.setColor(false) // Disable
+                        <br />cap.setColor(true, ["#f00"]) // Single
+                        <br />cap.setColor(true, ["#f00", "#0f0", "#00f"]) //
+                        Multiple
+                    </td>
+                </tr>
+                <tr>
+                    <td id="code">cap.setRotate(enableRotate, rotateArray)</td>
+                    <td>
+                        Pass false if you want you text be in one line and not
+                        jumbled up and done.You can also pass the array for the
+                        rotation value from -0.07 to 0.07
+                    </td>
+                    <td id="code">
+                        cap.setRotate() // Default
+                        <br />cap.setRotate(false) // Disable
+                        <br />cap.setRotate(true, [-0.07, 0, 0.07]) // Custom
+                    </td>
+                </tr>
+                <tr>
+                    <td id="code">
+                        cap.setBgColor(enableBgColor, bgColorArray)
+                    </td>
+                    <td>
+                        If you want your background to be of a specific color
+                        then pass the color array of your choise. But if you
+                        choose to pass false then the it defaults to white
+                        background.
+                    </td>
+                    <td id="code">
+                        cap.setBgColor() // Default
+                        <br />cap.setBgColor(false) // Disable
+                        <br />cap.setBgColor(true, ['#fff']) // Single
+                        <br />cap.setBgColor(true, ['#fff','#ddd','#bbb']) //
+                        Multiple
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            captchaSuccess = () => {
+                alert("Correct CAPTCHA :)");
+            };
+            captchaFailure = () => {
+                alert("Incorrect CAPTCHA :(");
+            };
+        </script>
+    </body>
+</html>
